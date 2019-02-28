@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('foo', function () {
+	return "Hello Worlds" ;
+});
+
+Route::get('posts/{post}/comments/{comment}', function
+($postId, $commentId) {
+});
+
+Route::resource('users','UserController');
